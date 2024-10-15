@@ -15,7 +15,10 @@
 
         <label for="restaurante_seleccionado">Nombre del Restaurante:</label>
         <input type="text" id="restaurante_seleccionado" value="<?php echo htmlspecialchars($restaurante); ?>" disabled required><br><br>
-
+        
+        <label for="fecha">Fecha de la Reserva:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        
         <input type="submit" value="Hacer Reserva">
     </form>
 </body>
