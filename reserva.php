@@ -19,6 +19,9 @@
         <label for="fecha">Fecha de la Reserva:</label>
         <input type="date" id="fecha" name="fecha" required><br><br>
         
+        <label for="numero_personas">Número de Personas:</label>
+        <input type="number" id="numero_personas" name="numero_personas" min="1" required><br><br>
+
         <input type="submit" value="Hacer Reserva">
     </form>
 </body>
