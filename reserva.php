@@ -10,5 +10,13 @@
     <?php
     $restaurante = isset($_GET['restaurante']) ? urldecode($_GET['restaurante']) : '';
     ?>
+    <form action="procesar_reserva.php" method="POST">
+        <input type="hidden" name="nombre_restaurante" value="<?php echo htmlspecialchars($restaurante); ?>">
+
+        <label for="restaurante_seleccionado">Nombre del Restaurante:</label>
+        <input type="text" id="restaurante_seleccionado" value="<?php echo htmlspecialchars($restaurante); ?>" disabled required><br><br>
+
+        <input type="submit" value="Hacer Reserva">
+    </form>
 </body>
 </html>
